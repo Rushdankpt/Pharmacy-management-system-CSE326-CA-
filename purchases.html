@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purchase History - LPU Medicines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+
+    <div class="sidebar">
+      <div class="brand">
+        <h2>LPU Medicines</h2>
+        <p>Pharmacy Manager</p>
+      </div>
+      <a href="index.html">Dashboard</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="sales.html">Sales &amp; Billing</a>
+      <a href="purchases.html" class="current">Purchase History</a>
+      <a href="reports.html">Reports</a>
+      <p class="side-note">CSE326 project<br>Sample data only</p>
+    </div>
+
+    <div class="main">
+
+      <div class="page-header">
+        <div>
+          <h1>Purchase History</h1>
+          <p>Stock bought from wholesalers, September and October 2026</p>
+        </div>
+        <!-- search-box only looks like a search bar (no JavaScript) -->
+        <div class="search-box">Search medicines...</div>
+      </div>
+
+      <div class="quick-links">
+        <a href="#summary">Summary</a>
+        <a href="#orders">All purchase orders</a>
+      </div>
+
+      <div class="cards" id="summary">
+        <div class="card">
+          <div class="label">Purchase Orders</div>
+          <div class="value">4</div>
+          <div class="hint">recorded</div>
+        </div>
+        <div class="card">
+          <div class="label">Total Spent</div>
+          <div class="value">&#8377;31,330</div>
+          <div class="hint">all four orders</div>
+        </div>
+        <div class="card warn">
+          <div class="label">Pending Delivery</div>
+          <div class="value">1</div>
+          <div class="hint">&#8377;3,200 order</div>
+        </div>
+      </div>
+
+      <div class="panel" id="orders">
+        <h2>Purchase Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order No.</th>
+              <th>Date</th>
+              <th>Supplier</th>
+              <th>Medicines</th>
+              <th class="num">Amount (&#8377;)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PUR-303</td>
+              <td>08 Oct 2026</td>
+              <td>GreenLeaf Wholesale</td>
+              <td>Vitamin C, ORS Sachet</td>
+              <td class="num">3,200.00</td>
+              <td><span class="badge low">Pending</span></td>
+            </tr>
+            <tr>
+              <td>PUR-302</td>
+              <td>05 Oct 2026</td>
+              <td>Healthway Pharma</td>
+              <td>Amoxicillin, Azithromycin</td>
+              <td class="num">8,950.00</td>
+              <td><span class="badge ok">Received</span></td>
+            </tr>
+            <tr>
+              <td>PUR-301</td>
+              <td>02 Oct 2026</td>
+              <td>MedLine Distributors</td>
+              <td>Paracetamol, Ibuprofen</td>
+              <td class="num">12,400.00</td>
+              <td><span class="badge ok">Received</span></td>
+            </tr>
+            <tr>
+              <td>PUR-304</td>
+              <td>28 Sep 2026</td>
+              <td>MedLine Distributors</td>
+              <td>Cetirizine, Metformin</td>
+              <td class="num">6,780.00</td>
+              <td><span class="badge ok">Received</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Total</td>
+              <td class="num">31,330.00</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <br>
+        <p><a href="medicines.html#alerts">Check which medicines are low on stock</a></p>
+      </div>
+
+      <p class="footer">LPU Medicines &middot; CSE326 &middot; static HTML &amp; CSS demo</p>
+    </div>
+  </div>
+</body>
+</html>

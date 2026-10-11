@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales &amp; Billing - LPU Medicines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+
+    <div class="sidebar">
+      <div class="brand">
+        <h2>LPU Medicines</h2>
+        <p>Pharmacy Manager</p>
+      </div>
+      <a href="index.html">Dashboard</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="sales.html" class="current">Sales &amp; Billing</a>
+      <a href="purchases.html">Purchase History</a>
+      <a href="reports.html">Reports</a>
+      <p class="side-note">CSE326 project<br>Sample data only</p>
+    </div>
+
+    <div class="main">
+
+      <div class="page-header">
+        <div>
+          <h1>Sales &amp; Billing</h1>
+          <p>A sample bill layout. Totals are typed in by hand (no JavaScript).</p>
+        </div>
+        
+        <div class="search-box">Search medicines...</div>
+      </div>
+
+      <div class="quick-links">
+        <a href="#new-bill">Bill form</a>
+        <a href="#past-bills">Past bills</a>
+      </div>
+
+      <div class="panel" id="new-bill">
+        <h2>Bill INV-1046</h2>
+
+        
+        <div class="form-row">
+          <div class="field">
+            <label>Customer name</label>
+            <input type="text" value="Divya Pillai" readonly>
+          </div>
+          <div class="field">
+            <label>Date</label>
+            <input type="text" value="11 Oct 2026" readonly>
+          </div>
+          <div class="field">
+            <label>Payment method</label>
+            <input type="text" value="UPI" readonly>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Medicine</th>
+              <th class="num">Qty</th>
+              <th class="num">Rate (&#8377;)</th>
+              <th class="num">Amount (&#8377;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paracetamol 500 mg</td>
+              <td class="num">10</td>
+              <td class="num">2.50</td>
+              <td class="num">25.00</td>
+            </tr>
+            <tr>
+              <td>Cetirizine 10 mg</td>
+              <td class="num">5</td>
+              <td class="num">3.00</td>
+              <td class="num">15.00</td>
+            </tr>
+            <tr>
+              <td>ORS Sachet</td>
+              <td class="num">2</td>
+              <td class="num">12.00</td>
+              <td class="num">24.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        
+        <div class="bill-total">
+          <p><span>Subtotal</span><span>&#8377;64.00</span></p>
+          <p><span>Tax (5%)</span><span>&#8377;3.20</span></p>
+          <p class="grand"><span>Total</span><span>&#8377;67.20</span></p>
+        </div>
+
+        <br>
+        <p><a class="btn" href="#past-bills">Save bill (demo)</a></p>
+        
+      </div>
+
+      <div class="panel" id="past-bills">
+        <h2>Today's Bills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Bill No.</th>
+              <th>Customer</th>
+              <th>Items</th>
+              <th>Payment</th>
+              <th class="num">Amount (&#8377;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>INV-1041</td>
+              <td>Rahul Menon</td>
+              <td>3</td>
+              <td>Cash</td>
+              <td class="num">245.00</td>
+            </tr>
+            <tr>
+              <td>INV-1042</td>
+              <td>Anita Das</td>
+              <td>2</td>
+              <td>UPI</td>
+              <td class="num">170.00</td>
+            </tr>
+            <tr>
+              <td>INV-1043</td>
+              <td>Walk-in customer</td>
+              <td>1</td>
+              <td>Cash</td>
+              <td class="num">85.00</td>
+            </tr>
+            <tr>
+              <td>INV-1044</td>
+              <td>Suresh K.</td>
+              <td>4</td>
+              <td>Card</td>
+              <td class="num">612.50</td>
+            </tr>
+            <tr>
+              <td>INV-1045</td>
+              <td>Meera Nair</td>
+              <td>2</td>
+              <td>UPI</td>
+              <td class="num">96.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Total for today (bills 1041 to 1045)</td>
+              <td class="num">1,208.50</td>
+            </tr>
+          </tfoot>
+        </table>
+        <br>
+        <p><a href="#new-bill">Back to bill form</a></p>
+      </div>
+
+      <p class="footer">LPU Medicines &middot; CSE326 &middot; static HTML &amp; CSS demo</p>
+    </div>
+  </div>
+</body>
+</html>

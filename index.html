@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - LPU Medicines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <div class="sidebar">
+      <div class="brand">
+        <h2>LPU Medicines</h2>
+        <p>Pharmacy Manager</p>
+      </div>
+
+      <a href="index.html" class="current">Dashboard</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="sales.html">Sales &amp; Billing</a>
+      <a href="purchases.html">Purchase History</a>
+      <a href="reports.html">Reports</a>
+
+      <p class="side-note">CSE326 project<br>Sample data only</p>
+    </div>
+
+    <div class="main">
+
+      <div class="page-header">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Overview of the pharmacy for Sunday, 11 October 2026</p>
+        </div>
+       
+        <div class="search-box">Search medicines...</div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="label">Total Medicines</div>
+          <div class="value">10</div>
+          <div class="hint">across 8 categories</div>
+        </div>
+
+        <div class="card">
+          <div class="label">Today's Sales</div>
+          <div class="value">&#8377;1,208.50</div>
+          <div class="hint">5 bills generated</div>
+        </div>
+
+        <div class="card warn">
+          <div class="label">Low Stock</div>
+          <div class="value">2</div>
+          <div class="hint">below 20 units</div>
+        </div>
+
+        <div class="card danger">
+          <div class="label">Expiring Soon</div>
+          <div class="value">2</div>
+          <div class="hint">within 60 days</div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="panel">
+          <h2>Alerts</h2>
+          <ul class="alert-list">
+            <li>ORS Sachet: only 9 units left</li>
+            <li>Amoxicillin 250 mg: only 18 units left</li>
+            <li class="red">Cough Syrup 100 ml expires on 31 Oct 2026</li>
+            <li class="red">Omeprazole 20 mg expires on 30 Nov 2026</li>
+          </ul>
+          <p><a href="medicines.html#alerts">See all stock details</a></p>
+        </div>
+
+        <div class="panel">
+          <h2>Quick Actions</h2>
+          <p>Jump straight to common tasks:</p>
+          <br>
+          <p><a class="btn" href="sales.html">Create a Bill</a></p>
+          <br>
+          <p><a class="btn" href="purchases.html">View Purchase History</a></p>
+          <br>
+          <p><a class="btn" href="reports.html">Open Reports</a></p>
+        </div>
+
+      </div>
+
+      <div class="panel">
+        <h2>Recent Sales</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Bill No.</th>
+              <th>Customer</th>
+              <th>Items</th>
+              <th>Payment</th>
+              <th class="num">Amount (&#8377;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>INV-1041</td>
+              <td>Rahul Menon</td>
+              <td>3</td>
+              <td>Cash</td>
+              <td class="num">245.00</td>
+            </tr>
+            <tr>
+              <td>INV-1042</td>
+              <td>Anita Das</td>
+              <td>2</td>
+              <td>UPI</td>
+              <td class="num">170.00</td>
+            </tr>
+            <tr>
+              <td>INV-1043</td>
+              <td>Walk-in customer</td>
+              <td>1</td>
+              <td>Cash</td>
+              <td class="num">85.00</td>
+            </tr>
+            <tr>
+              <td>INV-1044</td>
+              <td>Suresh K.</td>
+              <td>4</td>
+              <td>Card</td>
+              <td class="num">612.50</td>
+            </tr>
+            <tr>
+              <td>INV-1045</td>
+              <td>Meera Nair</td>
+              <td>2</td>
+              <td>UPI</td>
+              <td class="num">96.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Total for today</td>
+              <td class="num">1,208.50</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <p class="footer">LPU Medicines &middot; CSE326 &middot; static HTML &amp; CSS demo</p>
+
+    </div>
+  </div>
+
+</body>
+</html>

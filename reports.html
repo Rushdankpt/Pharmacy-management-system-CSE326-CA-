@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reports - LPU Medicines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+
+    <div class="sidebar">
+      <div class="brand">
+        <h2>LPU Medicines</h2>
+        <p>Pharmacy Manager</p>
+      </div>
+      <a href="index.html">Dashboard</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="sales.html">Sales &amp; Billing</a>
+      <a href="purchases.html">Purchase History</a>
+      <a href="reports.html" class="current">Reports</a>
+      <p class="side-note">CSE326 project<br>Sample data only</p>
+    </div>
+
+    <div class="main">
+
+      <div class="page-header">
+        <div>
+          <h1>Reports</h1>
+          <p>October 2026 summary (1 to 11 October)</p>
+        </div>
+        
+        <div class="search-box">Search medicines...</div>
+      </div>
+
+      <div class="quick-links">
+        <a href="#sales-summary">Sales summary</a>
+        <a href="#top-medicines">Top selling</a>
+        <a href="#stock-summary">Stock by category</a>
+      </div>
+
+      
+      <div class="panel" id="sales-summary">
+        <h2>Sales Summary</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th class="num">Bills</th>
+              <th class="num">Sales (&#8377;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Week 1 (1 to 7 Oct)</td>
+              <td class="num">38</td>
+              <td class="num">9,820.00</td>
+            </tr>
+            <tr>
+              <td>Week 2 so far (8 to 11 Oct)</td>
+              <td class="num">21</td>
+              <td class="num">4,615.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total this month</td>
+              <td class="num">59</td>
+              <td class="num">14,435.50</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      
+      <div class="panel" id="top-medicines">
+        <h2>Top Selling Medicines</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Medicine</th>
+              <th class="num">Units sold</th>
+              <th class="num">Revenue (&#8377;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Vitamin C 500 mg</td>
+              <td class="num">150</td>
+              <td class="num">225.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Paracetamol 500 mg</td>
+              <td class="num">120</td>
+              <td class="num">300.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ibuprofen 400 mg</td>
+              <td class="num">85</td>
+              <td class="num">297.50</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Cetirizine 10 mg</td>
+              <td class="num">70</td>
+              <td class="num">210.00</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ORS Sachet</td>
+              <td class="num">45</td>
+              <td class="num">540.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+      <div class="panel" id="stock-summary">
+        <h2>Stock by Category</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th class="num">Medicines</th>
+              <th class="num">Units in stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Analgesic</td>
+              <td class="num">2</td>
+              <td class="num">420</td>
+            </tr>
+            <tr>
+              <td>Antibiotic</td>
+              <td class="num">2</td>
+              <td class="num">60</td>
+            </tr>
+            <tr>
+              <td>Antihistamine</td>
+              <td class="num">1</td>
+              <td class="num">150</td>
+            </tr>
+            <tr>
+              <td>Antacid</td>
+              <td class="num">1</td>
+              <td class="num">95</td>
+            </tr>
+            <tr>
+              <td>Antidiabetic</td>
+              <td class="num">1</td>
+              <td class="num">60</td>
+            </tr>
+            <tr>
+              <td>Rehydration</td>
+              <td class="num">1</td>
+              <td class="num">9</td>
+            </tr>
+            <tr>
+              <td>Supplement</td>
+              <td class="num">1</td>
+              <td class="num">300</td>
+            </tr>
+            <tr>
+              <td>Cough &amp; Cold</td>
+              <td class="num">1</td>
+              <td class="num">35</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td class="num">10</td>
+              <td class="num">1,129</td>
+            </tr>
+          </tfoot>
+        </table>
+        <br>
+        <p><a href="#sales-summary">Back to top of reports</a></p>
+      </div>
+
+      <p class="footer">LPU Medicines &middot; CSE326 &middot; static HTML &amp; CSS demo</p>
+    </div>
+  </div>
+</body>
+</html>
