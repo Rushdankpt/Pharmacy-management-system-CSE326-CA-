@@ -1,0 +1,23 @@
+{
+  "name": "pharmacy-management-system",
+  "version": "1.0.0",
+  "description": "LPU Medicines - Pharmacy Management System",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rushdankpt/Pharmacy-management-system-CSE326-CA-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rushdankpt/Pharmacy-management-system-CSE326-CA-/issues"
+  },
+  "homepage": "https://github.com/Rushdankpt/Pharmacy-management-system-CSE326-CA-#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
